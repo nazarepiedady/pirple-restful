@@ -17,11 +17,19 @@ var server = http.createServer(function(request, response) {
   var path = parseURL.pathname;
   var trimmedPath = path.replace(/^\/+|\/+$/g, '');
 
+  // Get the HTTP Method
+  var method = request.method.toLowerCase();
+
   // Send the response
   response.end('Hello World\n');
   
   // Log the request path
-  console.log('Resquest received on path: ' + trimmedPath);
+  console.log(
+    'Resquest received on path: ' 
+    + trimmedPath +
+    ' with the method: '
+    + method
+  );
 
 });
 
