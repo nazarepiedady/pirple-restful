@@ -23,6 +23,9 @@ var server = http.createServer(function(request, response) {
   // Get the HTTP Method
   var method = request.method.toLowerCase();
 
+  // Get the headers as an object
+  var headers = request.headers;
+
   // Send the response
   response.end('Hello World\n');
   
@@ -32,8 +35,10 @@ var server = http.createServer(function(request, response) {
     + trimmedPath +
     ' with the method: '
     + method +
-    ' and with these query string parameters',
-    queryStringObject
+    ' and with these query string parameters:',
+    queryStringObject,
+    'and these headers:',
+    headers
   );
 
 
