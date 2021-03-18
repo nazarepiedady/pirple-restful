@@ -8,3 +8,7 @@ var environments = {};
 
 // Staging {default} environment
 environments.staging = {};
+
+
+// Production environment
+environments.production = {}
