@@ -14,4 +14,7 @@ environments.staging = {
 
 
 // Production environment
-environments.production = {}
+environments.production = {
+  'port': 5000,
+  'envName': 'production'
+};
