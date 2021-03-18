@@ -4,3 +4,7 @@
 
 // Container for all the environments
 var environments = {};
+
+
+// Staging {default} environment
+environments.staging = {};
