@@ -7,7 +7,10 @@ var environments = {};
 
 
 // Staging {default} environment
-environments.staging = {};
+environments.staging = {
+  'port': 3000,
+  'envName': 'staging'
+};
 
 
 // Production environment
