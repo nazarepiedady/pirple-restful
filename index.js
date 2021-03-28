@@ -10,6 +10,9 @@ var StringDecoder = require("string_decoder").StringDecoder;
 var config = require("./config");
 
 // Instantiate the HTTP server
+var server = http.createServer(function (request, response) {
+  unifiedServer(request, response);
+});
 
 // Start the server
 server.listen(config.httpPort, function () {
