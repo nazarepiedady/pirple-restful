@@ -20,7 +20,10 @@ var _data = require("./lib/data");
 // _data.read("test", "newFile", function (error, data) {
 //   console.log("this, was the error", error, "and this was the data", data);
 // });
-_data.update("test", "newFile", { fizz: "buzz" }, function (error) {
+// _data.update("test", "newFile", { fizz: "buzz" }, function (error) {
+//   console.log("this was the error", error);
+// });
+_data.delete("test", "newFile", function (error) {
   console.log("this was the error", error);
 });
 
